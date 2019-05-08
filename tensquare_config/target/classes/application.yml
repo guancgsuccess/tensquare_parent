@@ -1,0 +1,17 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: tensquare-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/guancgsuccess/tensquare-config.git
+  rabbitmq:
+    host: 192.168.2.49
+management: # 暴露总线消息地址`
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
