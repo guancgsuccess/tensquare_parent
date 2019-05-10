@@ -5,6 +5,6 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-        defaultZone: http://localhost:${server.port}/eureka/
+        defaultZone: http://l92.168.2.49:${server.port}/eureka/
 
 
