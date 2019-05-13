@@ -6,11 +6,10 @@
 #    fetch-registry: false
 #    service-url:
 #        defaultZone: http://localhost:${server.port}/eureka/
-server:
-  port: 6868
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-        defaultZone: http://localhost:${server.port}/eureka/
+spring:
+  cloud:
+    config:
+      name: eureka
+      profile: dev
+      label: master
+      uri: http://localhost:12000
